@@ -1,0 +1,7 @@
+{
+  "Title": "更公平的熊岛拍卖",
+  "Description": "熊岛拍卖NPC抬价太狠？是时候立点规矩了！\r\n\r\n1. 轮流出价就应该遵循Pass Equals Out的原则，现在NPC放弃就失去后续出价资格！\r\n2. NPC现在拥有一定数量的银两，会根据手头剩余的银两调整策略。\r\n3. 略微调整了一些数值。",
+  "WorkShopId": 3649550884,
+  "Visibility": 0,
+  "Tags": []
+}

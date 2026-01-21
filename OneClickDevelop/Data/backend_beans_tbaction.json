@@ -1,0 +1,78 @@
+[
+  {
+    "Id": "万象更新",
+    "Icon": "build",
+    "PrefixType": 15,
+    "MountEvents": [
+      "地点通用"
+    ],
+    "Scenarios": [
+      "default",
+      "empress",
+      "normal",
+      "evil"
+    ],
+    "ImportanceType": 1,
+    "Name": {
+      "key": "i18n/action/name/build_area_max",
+      "text": "万象更新"
+    },
+    "LuaCommandFile": "Area/build_area_max",
+    "CostActionCount": 0,
+    "ActionType": 0,
+    "RoundAfter": 2,
+    "PlayOnce": false,
+    "ShareEventId": "",
+    "PreEvents": [],
+    "PreEventsAfterRound": [],
+    "MenpaiExist": [],
+    "HasFlags": [],
+    "ExcludeFlags": [],
+    "ActionConditions": [
+      {
+        "$type": "AC_MenpaiHasArea",
+        "MenpaiId": "玩家",
+        "ExistCheckType": 1,
+        "AreaId": "当前地块"
+      }
+    ]
+  },
+  {
+    "Id": "通商惠工",
+    "Icon": "build",
+    "PrefixType": 15,
+    "MountEvents": [
+      "地点通用"
+    ],
+    "Scenarios": [
+      "default",
+      "empress",
+      "normal",
+      "evil"
+    ],
+    "ImportanceType": 1,
+    "Name": {
+      "key": "i18n/action/name/build_area_unlock",
+      "text": "通商惠工"
+    },
+    "LuaCommandFile": "Area/build_area_unlock",
+    "CostActionCount": 0,
+    "ActionType": 0,
+    "RoundAfter": 2,
+    "PlayOnce": false,
+    "ShareEventId": "",
+    "PreEvents": [],
+    "PreEventsAfterRound": [],
+    "MenpaiExist": [],
+    "HasFlags": [],
+    "ExcludeFlags": [],
+    "ActionConditions": [
+      {
+        "$type": "AC_MenpaiHasArea",
+        "MenpaiId": "玩家",
+        "ExistCheckType": 1,
+        "AreaId": "当前地块"
+      }
+    ]
+  }
+]
