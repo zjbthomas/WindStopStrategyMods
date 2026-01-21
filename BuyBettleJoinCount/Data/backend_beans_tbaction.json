@@ -1,0 +1,111 @@
+[
+  {
+    "Id": "增加次数_沙盒",
+    "Icon": "drug",
+    "PrefixType": 13,
+    "MountEvents": [
+      "地点通用"
+    ],
+    "Scenarios": [
+      "sandbox"
+    ],
+    "ImportanceType": 1,
+    "Name": {
+      "key": "i18n/action/name/pavilion",
+      "text": "洗尘阁"
+    },
+    "LuaCommandFile": "Story/洗尘阁",
+    "CostActionCount": 0,
+    "ActionType": 0,
+    "RoundAfter": 0,
+    "PlayOnce": false,
+    "ShareEventId": "",
+    "PreEvents": [],
+    "PreEventsAfterRound": [],
+    "MenpaiExist": [],
+    "HasFlags": [],
+    "ExcludeFlags": [],
+    "ActionConditions": [
+      {
+        "$type": "AC_MenpaiHasArea",
+        "MenpaiId": "玩家",
+        "ExistCheckType": 1,
+        "AreaId": "当前地块"
+      }
+    ]
+  },
+  {
+    "Id": "增加次数_邪线",
+    "Icon": "drug",
+    "PrefixType": 13,
+    "MountEvents": [
+      "遗迹一"
+    ],
+    "Scenarios": [
+      "evil"
+    ],
+    "ImportanceType": 1,
+    "Name": {
+      "key": "i18n/action/name/pavilion",
+      "text": "洗尘阁"
+    },
+    "LuaCommandFile": "Story/洗尘阁",
+    "CostActionCount": 0,
+    "ActionType": 0,
+    "RoundAfter": 0,
+    "PlayOnce": false,
+    "ShareEventId": "",
+    "PreEvents": [],
+    "PreEventsAfterRound": [],
+    "MenpaiExist": [],
+    "HasFlags": [],
+    "ExcludeFlags": [],
+    "ActionConditions": [
+      {
+        "$type": "AC_MenpaiHasArea",
+        "MenpaiId": "玩家",
+        "ExistCheckType": 1,
+        "AreaId": "当前地块"
+      }
+    ]
+  },
+  {
+    "Id": "增加次数",
+    "Icon": "drug",
+    "PrefixType": 13,
+    "MountEvents": [
+      "虎焰堂"
+    ],
+    "Scenarios": [
+      "default",
+      "empress",
+      "normal"
+    ],
+    "ImportanceType": 1,
+    "Name": {
+      "key": "i18n/action/name/pavilion",
+      "text": "洗尘阁"
+    },
+    "LuaCommandFile": "Story/洗尘阁",
+    "CostActionCount": 0,
+    "ActionType": 0,
+    "RoundAfter": 0,
+    "PlayOnce": false,
+    "ShareEventId": "",
+    "PreEvents": [],
+    "PreEventsAfterRound": [],
+    "MenpaiExist": [],
+    "HasFlags": [
+      "已解锁医馆"
+    ],
+    "ExcludeFlags": [],
+    "ActionConditions": [
+      {
+        "$type": "AC_MenpaiHasArea",
+        "MenpaiId": "玩家",
+        "ExistCheckType": 1,
+        "AreaId": "当前地块"
+      }
+    ]
+  }
+]
