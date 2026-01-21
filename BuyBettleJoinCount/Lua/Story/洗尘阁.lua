@@ -26,7 +26,7 @@ end
 
 -- 计算洗尘费用
 local round = get_game_round()
-local singleCost = math.min(500 + math.floor(round / 10) * 100, 3000) -- TODO: 费用计算公式可调整
+local singleCost = math.min(300 + math.floor(round / 20) * 100, 2000) -- TODO: 费用计算公式可调整
 local totalCost = singleCost * selectedRoles.Count
 
 local is_ok = yes_or_no(string.i18_format("本次洗尘{0}人需花费 {1} x {2}, 是否继续？", selectedRoles.Count, item_tip_link("银两"), totalCost))
