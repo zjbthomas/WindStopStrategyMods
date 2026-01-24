@@ -25,8 +25,16 @@ if selectedRoles.Count <= 0 then
 end
 
 -- 计算洗尘费用
-local round = get_game_round()
-local singleCost = math.min(300 + math.floor(round / 20) * 100, 2000) -- TODO: 费用计算公式可调整
+local playerMenpai = get_player_menpai()
+if not playerMenpai then
+    print_error("错误，未找到玩家门派")
+    return -1
+end
+
+local economic = require 'Common/economy'
+local income = economic.income_of_menpai(playerMenpai)
+
+local singleCost = math.max(500, math.min(5000, math.floor(0.4 * income))) -- TODO: 费用计算公式可调整
 local totalCost = singleCost * selectedRoles.Count
 
 local is_ok = yes_or_no(string.i18_format("本次洗尘{0}人需花费 {1} x {2}, 是否继续？", selectedRoles.Count, item_tip_link("银两"), totalCost))
